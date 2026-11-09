@@ -24,7 +24,7 @@ jobs:
       - name: Sync with upstream
         uses: aormsby/fork-sync-with-upstream-action@v3.4.3
         with:
-          upstream_repository: 原仓库所有者/原仓库名   # 例如 owner/repo
-          upstream_branch: main
-          target_branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          upstream_sync_repo: ZhuLinsen/daily_stock_analysis   # 例如 owner/repo
+          upstream_sync_branch: main
+          target_sync_branch: main
+          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
